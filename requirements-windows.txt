@@ -1,0 +1,18 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+diffusers==0.28.0
+transformers==4.41.1
+gradio==4.31.5
+bitsandbytes==0.43.1
+accelerate==0.30.1
+protobuf==3.20
+opencv-python
+tensorboardX
+safetensors
+pillow
+einops
+torch==2.3.0+cu121
+torchvision==0.18.0+cu121
+peft
+xformers
+onnxruntime
+av
