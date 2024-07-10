@@ -9,12 +9,8 @@ if (!(Test-Path -Path "venv")) {
 .\venv\Scripts\activate
 
 Write-Output "install deps..."
+pip install xformers==0.0.26.post1 --no-deps
 pip install -U -r requirements-windows.txt
-pip install .
-
-Write-Output "check models..."
-
-huggingface-cli download --resume-download fudan-generative-ai/hallo --local-dir pretrained_models --local-dir-use-symlinks False
 
 Write-Output "Install completed"
 Read-Host | Out-Null ;
